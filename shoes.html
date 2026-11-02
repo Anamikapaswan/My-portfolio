@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Shopping Website</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f6;
+}
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    background-color: lightseagreen;
+    color: black;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Main Container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Product Box */
+
+.box {
+    width: 280px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+
+    transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+
+.box:hover {
+    transform: translateY(-12px);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Product Image */
+
+.box img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+
+    transition: transform 0.4s;
+}
+
+/*.box:hover img {
+    transform: scale(1.1);
+}*/
+
+/* Product Name */
+
+.box h2 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Price */
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #388e3c;
+    margin-bottom: 15px;
+}
+
+/* Button */
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    background-color: black;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: lightseagreen;
+    transform: scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🛍️ My Shopping Website</h1>
+
+<div class="container">
+
+    <!-- Box 1 -->
+
+    <div class="box">
+
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/022/255/712/small_2x/beautiful-shoes-generative-ai-free-photo.jpg"
+        alt="skyblue Shoes">
+
+        <h2>Sports Shoes</h2>
+
+        <p class="price">₹1599</p>
+
+        <button>Add to Cart</button>
+
+    </div>
+
+
+    <!-- Box 2 -->
+
+    <div class="box">
+
+        <img src="https://images.pexels.com/photos/1120275/pexels-photo-1120275.jpeg?cs=srgb&dl=pexels-philip-lindvall-300724-1120275.jpg&fm=jpg"
+        alt="Watch">
+
+        <h2>Stylish Watch</h2>
+
+        <p class="price">₹1499</p>
+
+        <button>Add to Cart</button>
+
+    </div>
+
+
+    <!-- Box 3 -->
+
+    <div class="box">
+
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500"
+        alt="Handbag">
+
+        <h2>Fashion Handbag</h2>
+
+        <p class="price">₹1999</p>
+
+        <button>Add to Cart</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
